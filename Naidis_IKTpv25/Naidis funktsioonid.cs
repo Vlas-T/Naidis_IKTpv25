@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Naidis_IKTpv25
 {
-    public class Naidis_funktsioonid
+    public class naidis_funktsioonid
     {
         //    public static float Summa(float arv1, float arv2)
         //    {
