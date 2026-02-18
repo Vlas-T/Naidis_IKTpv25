@@ -110,7 +110,7 @@ namespace Naidis_IKTpv25
                 Console.WriteLine($"Sisestatud arv: {arvud[i]}");
             }
         }
-        //  1. Juhuslike arvude ruudud 
+        //  1. Juhuslike arvude ruudud \\ Случайные числовые квадраты
         public static int[] GenereeriRuudud(int min, int max)
         {
             Random rnd = new Random();
@@ -125,7 +125,7 @@ namespace Naidis_IKTpv25
             return arr;
         }
 
-        // 2. Viie arvu analüüs 
+        // 2. Viie arvu analüüs \\ Анализ пятизначных чисел
         public static Tuple<double, double, double> AnalüüsiArve(double[] arvud)
         {
             double sum = 0;
@@ -141,7 +141,7 @@ namespace Naidis_IKTpv25
             return Tuple.Create(sum, avg, korr);
         }
 
-        // 3. Nimed ja vanused 
+        // 3. Nimed ja vanused \\ Имена и возраст
         public static Tuple<int, double, Isik, Isik> Statistika(List<Isik> inimesed)
         {
             int sum = 0;
@@ -159,7 +159,7 @@ namespace Naidis_IKTpv25
             return Tuple.Create(sum, avg, vanim, noorim);
         }
 
-        //  4. Osta elevant 
+        //  4. Osta elevant \\ Купите слона
         public static List<string> KuniMärksõnani(string marksona, string fraas)
         {
             List<string> vastused = new List<string>();
@@ -174,7 +174,7 @@ namespace Naidis_IKTpv25
             return vastused;
         }
 
-        //  5. Arvamise mäng 
+        //  5. Arvamise mäng \\ Игра в угадывание
         public static void ArvaArv()
         {
             Random rnd = new Random();
@@ -199,7 +199,7 @@ namespace Naidis_IKTpv25
             Console.WriteLine("Mäng läbi! Õige arv oli " + saladus);
         }
 
-        // 6. Suurim neliarv 
+        // 6. Suurim neliarv \\ Наибольшее четырехзначное число
         public static int SuurimNeliarv(int[] arvud)
         {
             Array.Sort(arvud);
@@ -208,7 +208,7 @@ namespace Naidis_IKTpv25
             return arvud[0] * 1000 + arvud[1] * 100 + arvud[2] * 10 + arvud[3];
         }
 
-        //  7. Korrutustabel 
+        //  7. Korrutustabel \\ Таблица умножения
         public static int[,] GenereeriKorrutustabel(int r, int v)
         {
             int[,] table = new int[r, v];
@@ -226,7 +226,7 @@ namespace Naidis_IKTpv25
             return table;
         }
 
-        // 8. Õpilastega mängimine
+        // 8. Õpilastega mängimine \\ Игра со студентами
         public static void Opilased()
         {
             string[] nimed = { "Aadu", "Berit", "Caro", "Davis", "Ene", "Fred", "Gina", "Hendrik", "Ivo", "Jaan" };
@@ -256,7 +256,7 @@ namespace Naidis_IKTpv25
             } while (nr < nimed.Length && nimed[nr - 1] != "Mati");
         }
 
-        //  9. Arvude ruudud 
+        //  9. Arvude ruudud \\ Квадраты чисел
         public static void Arvude_ruudud()
         {
             int[] arvud = { 2, 4, 6, 8, 10, 12 };
@@ -276,7 +276,7 @@ namespace Naidis_IKTpv25
             Console.WriteLine($"Arve, mis jaguvad 3-ga: {count}");
         }
 
-        // 10. Positiivsed ja negatiivsed 
+        // 10. Positiivsed ja negatiivsed \\ Положительные и отрицательные
         public static void Positiivsed_negatiivsed()
         {
             int[] arvud = { 5, -3, 0, 8, -1, 4, -7, 2, 0, -5, 6, 9 };
@@ -292,7 +292,7 @@ namespace Naidis_IKTpv25
             Console.WriteLine($"Positiivseid: {pos}, Negatiivseid: {neg}, Nulle: {nul}");
         }
 
-        // 11. Keskmisest suuremad 
+        // 11. Keskmisest suuremad \\ Больше среднего
         public static void Keskmisest_suuremad()
         {
             Random rnd = new Random();
@@ -322,7 +322,7 @@ namespace Naidis_IKTpv25
             Console.WriteLine();
         }
 
-        // 12. Kõige suurema arvu otsing
+        // 12. Kõige suurema arvu otsing \\ Нахождение наибольшего числа
         public static void Suurim_arv()
         {
             int[] numbrid = { 12, 56, 78, 2, 90, 43, 88, 67 };
@@ -341,7 +341,7 @@ namespace Naidis_IKTpv25
             Console.WriteLine($"Suurim arv: {suurim}, indeks: {indeks}");
         }
 
-        // 13. Paari- ja paaritud loendused 
+        // 13. Paari- ja paaritud loendused \\ Четные и нечетные числа
         public static void Paari_paaritud()
         {
             Random rnd = new Random();
