@@ -30,11 +30,11 @@ namespace Naidis_IKTpv25
             while (j != 0);
             int[] arvud = new int[5];
             Console.WriteLine("Täisarvude massiiv:");
-            arvud = Naidis_funktsioonid.Täida_massiiv(arvud);
-            Naidis_funktsioonid.Massiivide_kuvamine(arvud);
+            arvud = naidis_funktsioonid.Täida_massiiv(arvud);
+            naidis_funktsioonid.Massiivide_kuvamine(arvud);
 
             //Küsi mis positsioonil muuda element ja mis väärtuseks, muuda element ja kuva massiiv
-            Naidis_funktsioonid.Muuda_element_massiivis(arvud);
+            naidis_funktsioonid.Muuda_element_massiivis(arvud);
 
             List<Isik> inimesed = new List<Isik>();
 
@@ -61,24 +61,24 @@ namespace Naidis_IKTpv25
             }
             //  Meetodite näited
             Console.WriteLine("\nJuhuslike arvude ruudud:");
-            var ruudud = Naidis_funktsioonid.GenereeriRuudud(1, 10);
+            var ruudud = naidis_funktsioonid.GenereeriRuudud(1, 10);
             foreach (var r in ruudud) Console.WriteLine(r);
 
             Console.WriteLine("\nAnalüüsi viie arvu tulemus:");
             double[] arvud2 = { 1, 2, 3, 4, 5 };
-            var t = Naidis_funktsioonid.AnalüüsiArve(arvud2);
+            var t = naidis_funktsioonid.AnalüüsiArve(arvud2);
             Console.WriteLine($"Summa: {t.Item1}, Keskmine: {t.Item2}, Korrutis: {t.Item3}");
 
             Console.WriteLine("\nKorrutustabel 5x5:");
-            Naidis_funktsioonid.GenereeriKorrutustabel(5, 5);
+            naidis_funktsioonid.GenereeriKorrutustabel(5, 5);
 
             Console.WriteLine("\nÕpilastega mängimine:");
-            Naidis_funktsioonid.Opilased();
-            Naidis_funktsioonid.Arvude_ruudud();
-            Naidis_funktsioonid.Positiivsed_negatiivsed();
-            Naidis_funktsioonid.Keskmisest_suuremad();
-            Naidis_funktsioonid.Suurim_arv();
-            Naidis_funktsioonid.Paari_paaritud();
+            naidis_funktsioonid.Opilased();
+            naidis_funktsioonid.Arvude_ruudud();
+            naidis_funktsioonid.Positiivsed_negatiivsed();
+            naidis_funktsioonid.Keskmisest_suuremad();
+            naidis_funktsioonid.Suurim_arv();
+            naidis_funktsioonid.Paari_paaritud();
 
 
             /*Console.OutputEncoding = Encoding.UTF8;
